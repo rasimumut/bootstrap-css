@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StajProje</title>
+    <!--json-->
+      
+    <!--CSS-->
+    <link rel="stylesheet" href="mycss/navbar.css">
+    <link rel="stylesheet" href="mycss/navbartex.css">
+    <link rel="stylesheet" href="mycss/fiyat.css">
+    <link rel="stylesheet" href="mycss/navbartext.css">
+    <link rel="stylesheet" href="mycss/info.css">
+    <link rel="stylesheet" href="mycss/button.css">
+    <link rel="stylesheet" href="mycss/body.css">
+    <link rel="stylesheet" href="mycss/carousel.css">
+    <link rel="stylesheet" href="mycss/slider.css">
+    <link rel="stylesheet" href="mycss/socialMedia.css">
+    <link rel="stylesheet" href="mycss/socialMediaItems.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="node_modules\bootstrap\dist\css\bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules\font-awesome\css\font-awesome.min.csss">
+   
+    <!--Font-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!--script-->
+    <script src="node_modules\jquery\dist\jquery.min.js"></script>
+    <script src="node_modules\bootstrap\dist\js\bootstrap.min.js"></script>
+    
+    <!--Slider-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+
+</head>
+<body class="body" style="margin-right: 8px;" >
+<!--navbarS-->
+
+<nav  class="navbar navbar-fixed-top sticky-top navbar-expand-md "data-toggle="affix"   ">
+    <div class="mx-auto d-sm-flex d-block flex-sm-nowrap">
+    <a class="navbar-brand" href="login.html">
+       <i> <img src="image\logo.png" alt="logo" style="width: 120px; height: 45px;"></i>
+    </a>
+    <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+        aria-expanded="false" aria-label="Menu">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavId" style="float: none;">
+
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item dropdown" style="margin-right: 20px;">
+                <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false" style="color: white; ">
+                    <i class="fa fa-bars" aria-hidden="true"></i> Katagoriler</a>
+                <div class="dropdown-menu" aria-labelledby="dropdownId" style="margin-top: 8.5%;" >
+                    <a class="dropdown-item" href="#">Katagori1</a>
+                    <a class="dropdown-item" href="#">Katagori2</a>
+                </div>
+            </li>
+
+<div class="active-cyan-4 " style="width: 450px;" >
+    <input style="text-align: center; background-color:#ffffff9f;" class="form-control" type="text" placeholder="Ürün Ara" aria-label=" Ürün Ara">
+  </div>
+  
+            <li class="nav-item active" style="margin-left: 20px;">
+                <a class="nav-link" href="uye.html" style="color: white; display: flex;
+                align-items: center;" >  Üyelik <img style="height: 30px; margin-left:10px  "  src="image/uye.png" alt="uye"> <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active" style="margin-left: 20px;">
+                <a class="nav-link" href="sepet.html" style="color: white; display: flex;
+                align-items: center; ">  Sepetim <img style="height: 30px; margin-left: 10px;" src="image/sepet.png" alt="sepet" ></a>
+            </li> 
+            </div>
+        </ul>
+    </div>
+</nav>
+<!--navbarE-->
+
+<!--carouselS-->
+
+<div id="carousel-example-2" class="carousel slide carousel-fade col-md-13 offset-md-0.5" data-ride="carousel" style="padding-left: 20px;">
+   
+    <ol class="carousel-indicators">
+      <li data-target="#carousel-example-2" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel-example-2" data-slide-to="1"></li>
+      <li data-target="#carousel-example-2" data-slide-to="2"></li>
+    </ol>
+    
+    
+    <div class="carousel-inner" role="listbox">
+      <div class="carousel-item active">
+        <div class="view">
+          <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(68).jpg"
+            alt="First slide">
+          <div class="mask rgba-black-light"></div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        
+        <div class="view">
+          <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(6).jpg"
+            alt="Second slide">
+          <div class="mask rgba-black-strong"></div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        
+        <div class="view">
+          <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(9).jpg"
+            alt="Third slide">
+          <div class="mask rgba-black-slight"></div>
+        </div>
+     </div>
+    </div>
+    
+    <!--Slider Controls-->
+    <a class="carousel-control-prev" href="#carousel-example-2" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carousel-example-2" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+    <!--Slider Controls End-->
+  </div>
+<!--carouselEnd-->
+
+
+            
+      <!--contentS-->
+      <div class="row my-4"> </div>
+       <!--contentE-->
+       <div class="container mt-6">
+         
+
+<h3 class="font-weight-bold mb-4 pb-2" style="text-align: left;">Öne Çıkanlar<a style="float: right; font-size: 12pt;" href>TÜM ÖNE ÇIKANLAR <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a></h3>
+<div class="container mt-5">
+    
+         <!-- Grid row -->
+      <div class="row">
+  
+        <!-- Grid column -->
+        <div class="col-lg-3 col-md-6 mb-4 d-flex align-items-stretch">
+          <!-- Card -->
+          <div class="card align-items-center">
+            <!-- Card image -->
+            <div class="view overlay">
+              <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/12.jpg" class="card-img-top"
+                alt="">
+              <a>
+                <div class="mask rgba-white-slight"></div>
+              </a>
+            </div>
+            
+            <!-- Card content -->
+            <div class="card-body text-center">
+              <!-- Category & Title -->
+              <a class="grey-text">
+                <i class="fa fa-star"> 4,4 <span>(122 Yorum)</span></i>
+              </a>
+              <div>
+                <small>PXCV3436VC</small> 
+             </div>
+              <h5 class="mb-3">
+                <a href="#">
+                    <h5>Iphohe 6 128Gb Uzay Girisi Cep Telefonu </h5>
+                  </a>
+              </h5>
+              <h5 style="color: blue; font-size: 25pt;">
+                <b>₺4.688</b>
+              </h5>
+              <a href="#"><button class="btn-primary btn-lg"> Sepete Ekle</button></a>
+            </div>
+            <!-- Card content -->
+          </div>
+          <!-- Card -->
+        </div>
+        <!-- Grid column -->
+        <div class="col-lg-3 col-md-6 mb-4 d-flex align-items-stretch">
+            <!-- Card -->
+            <div class="card align-items-center">
+              <!-- Card image -->
+              <div class="view overlay">
+                <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/12.jpg" class="card-img-top"
+                  alt="">
+                <a>
+                  <div class="mask rgba-white-slight"></div>
+                </a>
+              </div>
+              
+              <!-- Card content -->
+              <div class="card-body text-center">
+                <!-- Category & Title -->
+                <a class="grey-text">
+                  <i class="fa fa-star"> 4,4 <span>(122 Yorum)</span></i>
+                </a>
+                <div>
+                  <small>PXCV3436VC</small> 
+               </div>
+                <h5 class="mb-3">
+                  <a href="#">
+                      <h5>Iphohe 6 128Gb Uzay Girisi Cep Telefonu </h5>
+                    </a>
+                </h5>
+                <h5 style="color: blue; font-size: 25pt;">
+                  <b>₺4.688</b>
+                </h5>
+                <a href="#"><button class="btn-primary btn-lg"> Sepete Ekle</button></a>
+              </div>
+              <!-- Card content -->
+            </div>
+            <!-- Card -->
+            
+          </div>
+          <!-- Grid column -->
+  
+          <div class="col-lg-3 col-md-6 mb-4 d-flex align-items-stretch">
+            <!-- Card -->
+            <div class="card align-items-center">
+              <!-- Card image -->
+              <div class="view overlay">
+                <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/12.jpg" class="card-img-top"
+                  alt="">
+                <a>
+                  <div class="mask rgba-white-slight"></div>
+                </a>
+              </div>
+              
+              <!-- Card content -->
+              <div class="card-body text-center">
+                <!-- Category & Title -->
+                <a class="grey-text">
+                  <i class="fa fa-star"> 4,4 <span>(122 Yorum)</span></i>
+                </a>
+                <div>
+                  <small>PXCV3436VC</small> 
+               </div>
+                <h5 class="mb-3">
+                  <a href="#">
+                      <h5>Iphohe 6 128Gb Uzay Girisi Cep Telefonu </h5>
+                    </a>
+                </h5>
+                <h6 style="color: blue; font-size: 25pt;">
+                  <b>₺4.688</b>
+                </h6>
+                <a href="#"><button class="btn-primary btn-lg"> Sepete Ekle</button></a>
+              </div>
+              <!-- Card content -->
+            </div>
+            <!-- Card -->
+          </div>
+          <!-- Grid column -->
+  
+          <div class="col-lg-3 col-md-6 mb-4 d-flex align-items-stretch">
+            <!-- Card -->
+            <div class="card align-items-center">
+              <!-- Card image -->
+              <div class="view overlay">
+                <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/12.jpg" class="card-img-top"
+                  alt="">
+                <a>
+                  <div class="mask rgba-white-slight"></div>
+                </a>
+              </div>
+              
+              <!-- Card content -->
+              <div class="card-body text-center">
+                <!-- Category & Title -->
+                <a class="grey-text">
+                  <i class="fa fa-star"> 4,4 <span>(122 Yorum)</span></i>
+                </a>
+                <div>
+                  <small>PXCV3436VC</small> 
+               </div>
+                <h5 class="mb-3">
+                  <a href="#">
+                      <h5>Iphohe 6 128Gb Uzay Girisi Cep Telefonu </h5>
+                    </a>
+                </h5>
+                <h5 style="color: blue; font-size: 25pt;">
+                  <b>₺4.688</b>
+                </h5>
+                <a href="#"><button class="btn-primary btn-lg"> Sepete Ekle</button></a>
+              </div>
+              <!-- Card content -->
+            </div>
+            <!-- Card -->
+          </div>
+          <!-- Grid column -->
+  
+          <div class="col-lg-3 col-md-6 mb-4 d-flex align-items-stretch">
+            <!-- Card -->
+            <div class="card align-items-center">
+              <!-- Card image -->
+              <div class="view overlay">
+                <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/12.jpg" class="card-img-top"
+                  alt="">
+                <a>
+                  <div class="mask rgba-white-slight"></div>
+                </a>
+              </div>
+              
+              <!-- Card content -->
+              <div class="card-body text-center">
+                <!-- Category & Title -->
+                <a class="grey-text">
+                  <i class="fa fa-star"> 4,4 <span>(122 Yorum)</span></i>
+                </a>
+                <div>
+                  <small>PXCV3436VC</small> 
+               </div>
+                <h5 class="mb-3">
+                  <a href="#">
+                      <h5>Iphohe 6 128Gb Uzay Girisi Cep Telefonu </h5>
+                    </a>
+                </h5>
+                <h5 style="color: blue; font-size: 25pt;">
+                  <b>₺4.688</b>
+                </h5>
+                <a href="#"><button class="btn-primary btn-lg"> Sepete Ekle</button></a>
+              </div>
+              <!-- Card content -->
+            </div>
+            <!-- Card -->
+          </div>
+          <!-- Grid column -->
+  
+          <div class="col-lg-3 col-md-6 mb-4 d-flex align-items-stretch">
+            <!-- Card -->
+            <div class="card align-items-center">
+              <!-- Card image -->
+              <div class="view overlay">
+                <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/12.jpg" class="card-img-top"
+                  alt="">
+                <a>
+                  <div class="mask rgba-white-slight"></div>
+                </a>
+              </div>
+              
+              <!-- Card content -->
+              <div class="card-body text-center">
+                <!-- Category & Title -->
+                <a class="grey-text">
+                  <i class="fa fa-star"> 4,4 <span>(122 Yorum)</span></i>
+                </a>
+                <div>
+                  <small>PXCV3436VC</small> 
+               </div>
+                <h5 class="mb-3">
+                  <a href="#">
+                      <h5>Iphohe 6 128Gb Uzay Girisi Cep Telefonu </h5>
+                    </a>
+                </h5>
+                <h5 style="color: blue; font-size: 25pt;">
+                  <b>₺4.688</b>
+                </h5>
+                <a href="#"><button class="btn-primary btn-lg"> Sepete Ekle</button></a>
+              </div>
+              <!-- Card content -->
+            </div>
+            <!-- Card -->
+          </div>
+          <!-- Grid column -->
+  
+          <div class="col-lg-3 col-md-6 mb-4 d-flex align-items-stretch">
+            <!-- Card -->
+            <div class="card align-items-center">
+              <!-- Card image -->
+              <div class="view overlay">
+                <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/12.jpg" class="card-img-top"
+                  alt="">
+                <a>
+                  <div class="mask rgba-white-slight"></div>
+                </a>
+              </div>
+              
+              <!-- Card content -->
+              <div class="card-body text-center">
+                <!-- Category & Title -->
+                <a class="grey-text">
+                  <i class="fa fa-star"> 4,4 <span>(122 Yorum)</span></i>
+                </a>
+                <div>
+                  <small>PXCV3436VC</small> 
+               </div>
+                <h5 class="mb-3">
+                  <a href="#">
+                      <h5>Iphohe 6 128Gb Uzay Girisi Cep Telefonu </h5>
+                    </a>
+                </h5>
+                <h5 style="color: blue; font-size: 25pt;">
+                  <b>₺4.688</b>
+                </h5>
+                <a href="#"><button class="btn-primary btn-lg"> Sepete Ekle</button></a>
+              </div>
+              <!-- Card content -->
+            </div>
+            <!-- Card -->
+          </div>
+          <!-- Grid column -->
+  
+          <div class="col-lg-3 col-md-6 mb-4 d-flex align-items-stretch">
+            <!-- Card -->
+            <div class="card align-items-center">
+              <!-- Card image -->
+              <div class="view overlay">
+                <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/12.jpg" class="card-img-top"
+                  alt="">
+                <a>
+                  <div class="mask rgba-white-slight"></div>
+                </a>
+              </div>
+              
+              <!-- Card content -->
+              <div class="card-body text-center">
+                <!-- Category & Title -->
+                <a class="grey-text">
+                  <i class="fa fa-star"> 4,4 <span>(122 Yorum)</span></i>
+                </a>
+                <div>
+                  <small>PXCV3436VC</small> 
+               </div>
+                <h5 class="mb-3">
+                  <a href="#">
+                      <h5>Iphohe 6 128Gb Uzay Girisi Cep Telefonu </h5>
+                    </a>
+                </h5>
+                <h5 style="color: blue; font-size: 25pt;">
+                  <b>₺4.688</b>
+                </h5>
+                <a href="#"><button class="btn-primary btn-lg"> Sepete Ekle</button></a>
+              </div>
+              <!-- Card content -->
+            </div>
+            <!-- Card -->
+          </div>
+          <!-- Grid column -->
+          </div>
+       
+  
+      </div>
+      <!-- Grid row -->
+  
+    </section>
+    <!--Section: Content-->
+  </div>
+      <br>
+      <br>
+          
+
+      <!--Çok Satanlar Start-->
+
+      <div class="container col-lg-8">
+        <div class="row">
+            <div class="col-md-12">
+                <h3><b>Çok Satanlar</b></h3>
+                <br>
+                <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="0">
+                
+                <!-- Wrapper for carousel items -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <div class="thumb-wrapper">
+                                    <div class="img-box">
+                                        <div class="card align-items-center">
+                                            <!-- Card image -->
+                                            <div class="view overlay">
+                                              <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/12.jpg" class="card-img-top"
+                                                alt="">
+                                              <a>
+                                                <div class="mask rgba-white-slight"></div>
+                                              </a>
+                                            </div>
+                                            
+                                            <!-- Card content -->
+                                            <div class="card-body text-center">
+                                              <!-- Category & Title -->
+                                              <a class="grey-text">
+                                                <i class="fa fa-star"> 4,4 <span>(122 Yorum)</span></i>
+                                              </a>
+                                              <div>
+                                                <small>PXCV3436VC</small> 
+                                             </div>
+                                              <h5 class="mb-3">
+                                                <a href="#">
+                                                    <h6>Iphohe 6 128Gb Uzay Girisi Cep Telefonu </h6>
+                                                  </a>
+                                              </h5>
+                                              <h5 style="color: blue;">
+                                                <b>₺4.688</b>
+                                              </h5>
+                                              <a href="#"><button class="btn-primary btn-lg"> Sepete Ekle</button></a>
+                                            </div>
+                                            <!-- Card content -->
+                                          </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="thumb-wrapper">
+                                    <div class="card align-items-center">
+                                        <!-- Card image -->
+                                        <div class="view overlay">
+                                          <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/12.jpg" class="card-img-top"
+                                            alt="">
+                                          <a>
+                                            <div class="mask rgba-white-slight"></div>
+                                          </a>
+                                        </div>
+                                        
+                                        <!-- Card content -->
+                                        <div class="card-body text-center">
+                                          <!-- Category & Title -->
+                                          <a class="grey-text">
+                                            <i class="fa fa-star"> 4,4 <span>(122 Yorum)</span></i>
+                                          </a>
+                                          <div>
+                                            <small>PXCV3436VC</small> 
+                                         </div>
+                                          <h5 class="mb-3">
+                                            <a href="#">
+                                                <h6>Iphohe 6 128Gb Uzay Girisi Cep Telefonu </h6>
+                                              </a>
+                                          </h5>
+                                          <h5 style="color: blue; ">
+                                            <b>₺4.688</b>
+                                          </h5>
+                                          <a href="#"><button class="btn-primary btn-lg"> Sepete Ekle</button></a>
+                                        </div>
+                                        <!-- Card content -->
+                                      </div>						
+                                </div>
+                            </div>		
+                            <div class="col-sm-3">
+                                <div class="thumb-wrapper">
+                                    <div class="card align-items-center">
+                                        <!-- Card image -->
+                                        <div class="view overlay">
+                                          <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/12.jpg" class="card-img-top"
+                                            alt="">
+                                          <a>
+                                            <div class="mask rgba-white-slight"></div>
+                                          </a>
+                                        </div>
+                                        
+                                        <!-- Card content -->
+                                        <div class="card-body text-center">
+                                          <!-- Category & Title -->
+                                          <a class="grey-text">
+                                            <i class="fa fa-star"> 4,4 <span>(122 Yorum)</span></i>
+                                          </a>
+                                          <div>
+                                            <small>PXCV3436VC</small> 
+                                         </div>
+                                          <h5 class="mb-3">
+                                            <a href="#">
+                                                <h6>Iphohe 6 128Gb Uzay Girisi Cep Telefonu </h6>
+                                              </a>
+                                          </h5>
+                                          <h5 style="color: blue; ">
+                                            <b>₺4.688</b>
+                                          </h5>
+                                          <a href="#"><button class="btn-primary btn-lg"> Sepete Ekle</button></a>
+                                        </div>
+                                        <!-- Card content -->
+                                      </div>					
+                                </div>
+                            </div>								
+                            <div class="col-sm-3">
+                                <div class="thumb-wrapper">
+                                    <div class="card align-items-center">
+                                        <!-- Card image -->
+                                        <div class="view overlay">
+                                          <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/12.jpg" class="card-img-top"
+                                            alt="">
+                                          <a>
+                                            <div class="mask rgba-white-slight"></div>
+                                          </a>
+                                        </div>
+                                        
+                                        <!-- Card content -->
+                                        <div class="card-body text-center">
+                                          <!-- Category & Title -->
+                                          <a class="grey-text">
+                                            <i class="fa fa-star"> 4,4 <span>(122 Yorum)</span></i>
+                                          </a>
+                                          <div>
+                                            <small>PXCV3436VC</small> 
+                                         </div>
+                                          <h5 class="mb-3">
+                                            <a href="#">
+                                                <h6>Iphohe 6 128Gb Uzay Girisi Cep Telefonu </h6>
+                                              </a>
+                                          </h5>
+                                          <h5 style="color: blue;">
+                                            <b>₺4.688</b>
+                                          </h5>
+                                          <a href="#"><button class="btn-primary btn-lg"> Sepete Ekle</button></a>
+                                        </div>
+                                        <!-- Card content -->
+                                      </div>						
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <div class="thumb-wrapper">
+                                    <div class="card align-items-center">
+                                        <!-- Card image -->
+                                        <div class="view overlay">
+                                          <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/12.jpg" class="card-img-top"
+                                            alt="">
+                                          <a>
+                                            <div class="mask rgba-white-slight"></div>
+                                          </a>
+                                        </div>
+                                        
+                                        <!-- Card content -->
+                                        <div class="card-body text-center">
+                                          <!-- Category & Title -->
+                                          <a class="grey-text">
+                                            <i class="fa fa-star"> 4,4 <span>(122 Yorum)</span></i>
+                                          </a>
+                                          <div>
+                                            <small>PXCV3436VC</small> 
+                                         </div>
+                                          <h5 class="mb-3">
+                                            <a href="#">
+                                                <h6>Iphohe 6 128Gb Uzay Girisi Cep Telefonu </h6>
+                                              </a>
+                                          </h5>
+                                          <h5 style="color: blue;" >
+                                            <b>₺4.688</b>
+                                          </h5>
+                                          <a href="#"><button class="btn-primary btn-lg"> Sepete Ekle</button></a>
+                                        </div>
+                                        <!-- Card content -->
+                                      </div>				
+                                </div>
+                            </div>
+                         
+                        </div>
+                    </div>
+                </div>
+                <!-- Carousel controls -->
+                <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+            </div>
+        </div>
+    </div>
+    
+     
+    <!--Çok Satanlar End-->
+   <div style="margin-right: 10px; margin-left: 19px; margin-right: 2px;">
+    <div>
+       <!--footerS-->
+       <div class="card" style="margin-top: 90px;" >
+           <div class="info" aria-hidden="true">
+               <a style="margin-left: 5%; margin-right: 5%;" ><i><img src="image/moto.png" ></i> MOTOKURYE</a>
+               <a style="margin-left: 5%; margin-right: 5%;" > <i><img src="image/saat.png" > </i> BUGÜN KARGODA</a>
+               <a style="margin-left: 5%; margin-right: 5%;" ><i><img src="image/kutu.png" > </i>ÜCRETSİZ KARGO</a>
+               <a style="margin-left: 5%; margin-right: 5%;" > <i> <img src="image/tik.png" alt="" srcset=""> </i> KOLAY DEĞİŞİM</a>
+            </div>
+            </div>
+        </div>
+            <div class="card">
+            <div class="socialMedia">
+                
+                <a  style="margin-right: 5%; margin-left: 5%;" href="#" >   <img src="image/twitter.png">  </a>
+                <a  style="margin-right: 5%; margin-left: 5%;" href="#" >   <img src="image/facebook.png">  </a>
+                <a  style="margin-right: 5%; margin-left: 5%;" href="#" >   <img src="image/youtube.png">  </a>
+                <a  style="margin-right: 5%; margin-left: 5%;" href="#" >   <img src="image/instagram.png"> </a>
+                <a  style="margin-right: 5%; margin-left: 5%;" href="#" >   <img src="image/google.png"> </a>
+            
+             </div>
+            </div>
+            <div class="card">
+                <div class="info">
+                    
+                    <a href="#" class="btn btn-lg btn-light info1 "> <img src="image/mail.svg" alt="mail" style="height: 30px; padding: 1.5px;"> ÜYE OL</a>
+                    <br><br>
+                    <a href="#" class="btn btn-lg btn-light info1" style="margin-left:5% ; margin-right: 5%;"><img src="image/map.svg" alt="map" style="height: 30px;"> MAĞAZA BUL </a>
+                    <a href="#" class="btn btn-lg btn-light info1" style="margin-left: 5%; margin-right: 5%;"><img src="image/mobile.svg" alt="phone" style="height: 30px; "> 0850 222 56 56</a>
+                
+                 </div>
+                </div>
+    
+
+<!-- early Footer Start-->
+<div class="card">
+<footer class="page-footer font-small indigo">
+
+    <!-- Footer Links -->
+    <div class="container text-center text-md-left">
+  
+      <!-- Grid row -->
+      <div class="row">
+  
+        <!-- Grid column -->
+        <div class="col-md-3 mx-auto">
+  
+          <!-- Links -->
+          <h6 class="font-weight-bold text-uppercase mt-3 mb-4"><b>KURUMSAL</b></h6>
+  
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!">Very long link 1</a>
+            </li>
+            <li>
+              <a href="#!">Very long link 2</a>
+            </li>
+            <li>
+              <a href="#!">Very long link 3</a>
+            </li>
+            <li>
+              <a href="#!">Very long link 4</a>
+            </li>
+          </ul>
+  
+        </div>
+        <!-- Grid column -->
+  
+        <hr class="clearfix w-100 d-md-none">
+  
+        <!-- Grid column -->
+        <div class="col-md-3 mx-auto">
+  
+          <!-- Links -->
+          <h6 class="font-weight-bold text-uppercase mt-3 mb-4"><b>KATEGORİLER</b></h6>
+  
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!">Link 1</a>
+            </li>
+            <li>
+              <a href="#!">Link 2</a>
+            </li>
+            <li>
+              <a href="#!">Link 3</a>
+            </li>
+            <li>
+              <a href="#!">Link 4</a>
+            </li>
+          </ul>
+  
+        </div>
+        <!-- Grid column -->
+  
+        <hr class="clearfix w-100 d-md-none">
+  
+        <!-- Grid column -->
+        <div class="col-md-3 mx-auto">
+  
+          <!-- Links -->
+          <h6 class="font-weight-bold text-uppercase mt-3 mb-4"><b>ÖZEL ÜRÜNLER</b></h6>
+  
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!">Link 1</a>
+            </li>
+            <li>
+              <a href="#!">Link 2</a>
+            </li>
+            <li>
+              <a href="#!">Link 3</a>
+            </li>
+            <li>
+              <a href="#!">Link 4</a>
+            </li>
+          </ul>
+  
+        </div>
+        <!-- Grid column -->
+  
+        <hr class="clearfix w-100 d-md-none">
+
+  </footer>
+</div>
+  <!-- early Footer End -->
+
+
+            <!-- Footer -->
+<footer class="page-footer">
+
+    <!-- Copyright -->
+    <div class="footer-copyright py-3" style="margin-left: 50px; margin-top: 10px;"><b>Türkiyenin Teknoloji Hiperstoru</b><br>Copyright © 2019 Vatan Bilgisayar San. ve Tic. A.Ş
+      <img style="float: right; margin-bottom: 20px  ;" src="image/footer.PNG" alt="">
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+    </div> 
+  <!--footerE-->
+
+</body>
+</html>

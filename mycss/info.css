@@ -1,0 +1,19 @@
+.info {
+    
+    padding: 50px;
+    font-size: 15px;
+    text-align: center;
+    margin-right: 5px;
+      
+    
+  }
+  .info .info1
+  {   
+      width: 300px;
+      border: 0.0,px inset  rgba(0, 0, 0, 0.109);
+      border-radius: 5px;
+      padding: 10px;
+      
+  
+  }
+  

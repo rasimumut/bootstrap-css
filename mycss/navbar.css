@@ -1,0 +1,41 @@
+.navbar{
+  background-color: #1564c0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-left: 20px;
+  justify-content: center;
+}
+
+.navbar .navbar-nav {
+    
+    float: none;
+    vertical-align: top;
+  }
+  
+  .navbar .navbar-collapse {
+    text-align: center;
+  }
+  .header {
+    padding: 10px 16px;
+    background: #555;
+    color: #f1f1f1;
+  }
+  
+/
+  .content {
+    padding: 16px;
+  }
+  
+
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+  }
+  
+
+  .sticky + .content {
+    padding-top: 102px;
+  }
+  
+  
+
